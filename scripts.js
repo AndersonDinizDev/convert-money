@@ -3,6 +3,7 @@ const select = document.getElementById('currency-select')
 
 const dolar = 5.15 // Valor atual do dolar
 const euro = 5.58 // Valor atual do euro
+const bitcoin = 120.742 // Valor atual do bitcoin 
 
 /* Nessa função é feita a conversão das moedas */
 const convertValues = () => {
@@ -17,9 +18,13 @@ const convertValues = () => {
 
         currencyValueText.innerHTML = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(inputReal / dolar)
 
-    } else {
+    } if (select.value === '€ Euro') {
 
         currencyValueText.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(inputReal / euro)
+
+    } if (select.value === '₿ Bitcoin') {
+
+        currencyValueText.innerHTML = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'BTC' }).format(inputReal / bitcoin)
     }
 
 };
@@ -35,10 +40,15 @@ const changeCurrency = () => {
         currencyName.innerHTML = 'Euro'
         currencyImg.src = './assets/euro.png'
 
-    } else {
+    } if (select.value === 'US$ Dólar americano') {
 
         currencyName.innerHTML = 'Dólar americano'
         currencyImg.src = './assets/us.png'
+
+    } if (select.value === '₿ Bitcoin') {
+
+        currencyName.innerHTML = 'Bitcoin'
+        currencyImg.src = './assets/bitcoin.png'
     }
 
     convertValues()
