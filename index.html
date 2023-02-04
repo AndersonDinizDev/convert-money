@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    <title>Conversor de Moedas</title>
+    <title>Convert Money</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="container">
 
         <header>
-            <h1>Conversor de Moedas</h1>
+            <h1>DevClub Convert Money</h1>
         </header>
 
         <main>
@@ -31,7 +31,7 @@
             </label>
             <label>
                 Converter <b>para:</b>
-                <select>
+                <select id="currency-select">
                     <option>
                         US$ Dólar americano
                     </option>
@@ -57,8 +57,8 @@
                 <img class="arrow-img" src="./assets/Vector.png">
                 
                 <div class="currency-container">
-                    <img src="./assets/us.png">
-                    <p class="currency-name">Dólar americano</p>
+                    <img src="./assets/us.png" id="currency-img">
+                    <p class="currency-name" id="currency-name">Dólar americano</p>
                     <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
                 </div>
             </section>
