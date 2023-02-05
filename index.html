@@ -23,21 +23,15 @@
         <main>
             <label>
                 Converter <b>de:</b>
-                <select id="currency-select-1">
+                <select>
                     <option>
                         R$ Real Brasileiro
-                    </option>
-                    <option>
-                        US$ Dólar americano
-                    </option>
-                    <option>
-                        € Euro
                     </option>
                 </select>
             </label>
             <label>
                 Converter <b>para:</b>
-                <select id="currency-select-2">
+                <select id="currency-select">
                     <option>
                         US$ Dólar americano
                     </option>
@@ -47,30 +41,27 @@
                     <option>
                         ₿ Bitcoin
                     </option>
-                    <option>
-                        R$ Real Brasileiro
-                    </option>
                 </select>
             </label>
             <label>
                 Valor:
-                <input placeholder="R$ 10.000,00" id="input-value">
+                <input placeholder="R$ 10.000,00" id="input-real">
             </label>
 
             <button type="button" id="convert-button">Converter</button>
 
             <section>
                 <div class="currency-container">
-                    <img src="./assets/brasil.png" id="currency-img-1">
-                    <p class="currency-name" id="currency-name-1">Real</p>
+                    <img src="./assets/brasil.png">
+                    <p class="currency-name">Real</p>
                     <p class="currency-value" id="real-value-text">R$ 10.000,00</p>
                 </div>
 
                 <img class="arrow-img" src="./assets/Vector.png">
                 
                 <div class="currency-container">
-                    <img src="./assets/us.png" id="currency-img-2">
-                    <p class="currency-name" id="currency-name-2">Dólar americano</p>
+                    <img src="./assets/us.png" id="currency-img">
+                    <p class="currency-name" id="currency-name">Dólar americano</p>
                     <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
                 </div>
             </section>
