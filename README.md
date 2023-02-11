@@ -1,5 +1,5 @@
 <h1>Conversor de Moedas</h1>
-Durante o curso sobre Jasvascript da <a href="https://rodolfomori.com.br/devclub/">Dev Club</a>, tivemos como desafio desenvolver um conversor de moedas.
+Durante o curso sobre Javascript da <a href="https://rodolfomori.com.br/devclub/">Dev Club</a>, tivemos como desafio desenvolver um conversor de moedas.
 
 <h2>Tecnologias Utilizadas:</h2>
 <ul>
