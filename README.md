@@ -23,6 +23,7 @@
 
 - [x] Add responsive;
 - [x] Add bitcoin currency;
+- [x] Add connection with API;
 
 ## 💻 Requeriments:
 
