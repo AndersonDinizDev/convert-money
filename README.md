@@ -22,6 +22,7 @@
 ## ✨ Features:
 
 - [x] Add responsive;
+- [x] Add bitcoin currency;
 
 ## 💻 Requeriments:
 
