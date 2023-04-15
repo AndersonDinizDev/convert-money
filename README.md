@@ -1,11 +1,47 @@
-<h1>Conversor de Moedas</h1>
-Conversor de moedas feito durante o módulo de Javascript da <a href="https://rodolfomori.com.br/devclub/">Dev Club</a>.
+# Convert-Money
 
-<h2>Tecnologias Utilizadas:</h2>
-<ul>
-<li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" width="70px" /></li>
-<li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" width="70px" /></li>
-<li><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" width="70px" /></li>
-</ul>
-<h2>Desktop:</h2>
-<img src="https://github.com/AndersonDinizDev/convert-money/blob/master/assets/print.png?raw=true" />
+<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
+
+<p align="center">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/andersondinizdev/login-page?style=for-the-badge">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/andersondinizdev/login-page?style=for-the-badge">
+
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/andersondinizdev/login-page?style=for-the-badge">
+
+   <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/andersondinizdev/login-page?style=for-the-badge">
+
+   <img alt="GitHub stars" src="https://img.shields.io/github/stars/andersondinizdev/login-page?style=for-the-badge"/> 
+
+</p>
+
+<p align="center">
+<img src="/assets/print.gif" alt="exemplo imagem"/>
+ </p>
+
+## ✨ Features:
+
+- [x] Add responsive;
+
+## 💻 Requeriments:
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## 🚀 Technologies:
+
+The following tools were used in this project:
+
+- [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/html/)  
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/andersondinizdev/convert-money.git
+# Access
+$ cd convert-money
+# The server will initialize in the <http://127.0.0.1:5500l>
+```
+[⬆ Voltar ao topo](#convert-money)<br>
