@@ -5,16 +5,82 @@
     font-family: "Roboto", sans-serif;
 }
 
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes backgroundTransition {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(135deg, #1b83e2, #00aaff, #1b83e2);
+    background-size: 200% 200%;
+    animation: backgroundMove 20s ease infinite;
+}
+
 body {
     background-color: #E5E5E5;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(135deg, #1b83e2, #00aaff, #1b83e2);
+    opacity: 0;
+    animation: backgroundTransition 20s ease infinite;
+    animation-delay: 10s;
 }
 
 .container {
     background-color: #F4F4F4;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 header {
@@ -23,6 +89,16 @@ header {
     justify-content: center;
     align-items: center;
     display: flex;
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 h1 {
@@ -35,6 +111,7 @@ h1 {
 
 main {
     padding: 25px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 label {
@@ -64,6 +141,11 @@ select {
     font-size: 16px;
     line-height: 18px;
     color: #555555;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+select:hover {
+    box-shadow: 0 0 8px rgba(27, 131, 226, 0.4);
 }
 
 input {
@@ -80,6 +162,11 @@ input {
     color: #555555;
     line-height: 18px;
     font-weight: 700;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input:hover {
+    box-shadow: 0 0 8px rgba(27, 131, 226, 0.4);
 }
 
 button {
@@ -91,16 +178,19 @@ button {
     margin-top: 24px;
     margin-bottom: 36px;
     font-style: normal;
-    font-weight: 700;
+    font-weight:
+
+ 700;
     font-size: 16px;
     line-height: 18px;
     color: #F4F4F4;
     cursor: pointer;
-    transition: 0.8s;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 button:hover {
-    opacity: 0.7;
+    background-color: #0962a3;
+    transform: scale(1.02);
 }
 
 button:active {
@@ -114,6 +204,16 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .currency-container {
